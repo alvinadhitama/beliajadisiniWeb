@@ -45,7 +45,7 @@
     <!-- Checkout -->
     <section class="checkout">
         <div class="container">
-            <div class="row" style="margin-bottom: 100px;" >
+            <div class="row justify-content-between" style="margin-bottom: 100px;" >
                 <div class="col-lg-6">
                     <h4 class="mb-4">Your Items</h4>
                     <div class="row mb-4">
@@ -65,7 +65,7 @@
                                 <i class="fas fa-plus-circle"></i>
                             </button>
                         </div>
-                        <div class="col-2">
+                        <div class="col-2 text-right">
                             <button type="button" class="btn btn-sm btn-danger" style="color: white;">
                                 <i class="fas fa-times-circle"></i>
                             </button>
@@ -88,7 +88,7 @@
                                 <i class="fas fa-plus-circle"></i>
                             </button>
                         </div>
-                        <div class="col-2">
+                        <div class="col-2 text-right">
                             <button type="button" class="btn btn-sm btn-danger" style="color: white;">
                                 <i class="fas fa-times-circle"></i>
                             </button>
@@ -111,7 +111,7 @@
                                 <i class="fas fa-plus-circle"></i>
                             </button>
                         </div>
-                        <div class="col-2">
+                        <div class="col-2 text-right">
                             <button type="button" class="btn btn-sm btn-danger" style="color: white;">
                                 <i class="fas fa-times-circle"></i>
                             </button>
@@ -147,10 +147,103 @@
                         </div>
                     </form>
                 </div>
+
+
+                <div class="col-lg-5">
+                    <div class="card rounded-0 checkout-detail">
+                        <div class="card-body">
+                            <h5 class="card-title">Cost</h5>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <h6 class="m-0">Lebron 16</h6>
+                                        <small style="color: #b7b7b7;">2 Items</small>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <h6 class="m-0 align-self-center text-success">IDR 15.000.000</h6>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <h6 class="m-0">Nike Adapt BB</h6>
+                                        <small style="color: #b7b7b7;">2 Items</small>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <h6 class="m-0 align-self-center text-success">IDR 25.000.000</h6>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <h6 class="m-0">Courier</h6>
+                                        <small style="color: #b7b7b7;">JNE</small>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <h6 class="m-0 align-self-center text-success">IDR 150.000</h6>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <h6 class="m-0">Tax</h6>
+                                        <small style="color: #b7b7b7;">10%</small>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <h6 class="m-0 align-self-center text-success">IDR 2.500.000</h6>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <h6 class="m-0">Christmas Promo</h6>
+                                        <small style="color: #b7b7b7;">10% OFF</small>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <h6 class="m-0 align-self-center text-danger">- IDR 1.500.000</h6>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <h6 class="m-0">Total Price</h6>
+                                    </div>
+                                    <div class="col d-flex justify-content-end">
+                                        <h6 class="m-0 align-self-center text-primary">IDR 45.000.000</h6>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col">
+                            <button type="button" class="btn btn-block" style="background-color: #eaeaef; color: #adadad;">
+                                Cancel
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-warning btn-block text-white" data-toggle="modal" data-target="#checkoutModal">
+                                Checkout
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- End Checkout -->
+    
+    <!-- Modal -->
+    <div class="modal fade checkout-modal-success" id="checkoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="img/checkout/checkout_success.png" alt="" class="mb-5">
+                <h3>Checkout Success</h3>
+                <p>Thank you for shopping with us.</p>
+                <button type="button" class="btn mt-3" data-dismiss="modal" style="background-color: #eaeaef; color: #adadad;">Home</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- End Modal -->
 
     <!--Footer-->
     <footer class="border-top p-5">
